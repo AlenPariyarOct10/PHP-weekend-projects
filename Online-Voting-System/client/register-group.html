@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <form action="../api/register-group.php" method="POST" enctype="multipart/form-data">
+        
+        <table>
+          <tr>
+            <td>
+                <h2 id="headTitle">Online Voting System</h2>
+            </td>
+            
+            
+          </tr>
+          <tr>
+            <td>
+                
+                <img src="https://cdn-icons-png.flaticon.com/512/4662/4662810.png " width="80" height="80" alt="" title="" class="img-small">
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Register Groups</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input
+                type="text"
+                name="Name"
+                id="fName"
+                class="loginInpBox"
+                placeholder="Name of Group"
+              />
+            </td>
+          </tr>
+
+
+
+          <tr>
+          
+            <td>
+              <input class="loginInpBox" type="password" name="passwordField" id="passwordField" placeholder="Password" />
+            </td>
+          </tr>
+          <tr>
+            <td><span id="miniMsg">Upload your image</span></td>
+            <td>
+                
+                <input
+                type="file"
+                
+                placeholder="Phone No."
+                id="profile_pic"
+                name="profile_pic"
+                accept=".jpg, .jpeg, .png"
+                
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="margin-top: 10px;">
+              <button type="submit" id="submitBtn" class="btn submit-btn">Register</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><a id="registerLink" href="../client/register.html">Register new user.</a></td>
+          </tr>
+          <tr>
+            <td><a id="registerLink" href="../client/login.html">Login User.</a></td>
+          </tr>
+          <tr>
+            <td><a id="registerLink" href="../client/login-group.html">Login group.</a></td>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

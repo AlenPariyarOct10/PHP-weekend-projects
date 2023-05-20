@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <form action="../api/login-group.php" method="POST">
+        
+        <table>
+          <tr>
+            <td>
+                <h2 id="headTitle">Online Voting System</h2>
+            </td>
+            
+            
+          </tr>
+          <tr>
+            <td>
+                <img src="https://cdn-icons-png.flaticon.com/512/2673/2673003.png" width="50" height="50" alt="" title="" class="img-small">
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Login</h4>
+            </td>
+          </tr>
+          <tr>
+         
+            <td>
+              <input
+                type="text"
+                name="Name"
+                id="Name"
+                class="loginInpBox"
+                placeholder="Name"
+              />
+            </td>
+          </tr>
+          <tr>
+          
+            <td>
+              <input class="loginInpBox" type="password" name="passwordField" id="passwordField" placeholder="Password" />
+            </td>
+          </tr>
+          <tr>
+            <td style="margin-top: 10px;">
+              <button type="submit" id="submitBtn" class="btn submit-btn">Login</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><a id="registerLink" href="../client/register.html">Register new user.</a></td>
+          </tr>
+          <tr>
+            <td><a id="registerLink" href="../client/register-group.html">Register new group.</a></td>
+          </tr>
+          <tr>
+            <td><a id="registerLink" href="../client/login.html">Login user.</a></td>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
