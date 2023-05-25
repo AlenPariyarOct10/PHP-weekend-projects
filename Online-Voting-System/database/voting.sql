@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
+USE voting;
+
 CREATE TABLE `admin` (
   `name` varchar(256) NOT NULL,
   `password` varchar(256) NOT NULL,
