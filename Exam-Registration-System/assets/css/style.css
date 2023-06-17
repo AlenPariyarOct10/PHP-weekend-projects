@@ -1,0 +1,266 @@
+*{
+
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blueviolet;
+    padding: 20px;
+    
+
+}
+
+.navbar > .left{
+    display: flex;
+    justify-content: space-between;
+    width: 8vw;
+    
+}
+
+.left > .header{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.navbar button{
+    background-color: blueviolet;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.dashboard-menu-options li{
+    list-style: none;
+}
+
+.slidebar{
+    
+    height: 100%;
+    width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    background-color: rgb(43, 43, 43);
+    padding: 0;
+    margin: 0;
+    color: azure;
+    
+}
+
+.dashboard-menu-options ul,li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:medium;
+    padding-left: 0px;
+
+
+}
+
+.dashboard-menu-options > li{
+    margin: 10px;
+    padding: 10px;
+}
+.dashboard-menu-options > li:hover{
+    margin: 10px;
+    padding: 10px;
+    background-color: rebeccapurple;
+   
+    
+    cursor: pointer;
+}
+.dashboard-menu-options > li:active{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 153, 0);
+    cursor: pointer;
+}
+
+.active-option{
+    
+    padding: 10px;
+    background-color: rgba(255, 234, 0, 0.858);
+    
+}
+
+
+.sub-menu > li{
+    
+    margin: 10px;
+    padding: 10px;
+    margin-left: 50px;
+}
+.sub-menu > li:hover{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(51, 153, 110);
+    cursor: pointer;
+    margin-left: 50px;
+}
+.sub-menu > li:active{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 153, 0);
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+
+
+
+html, body{
+    height: 100vh;;
+}
+
+.body{
+    height: 100%;
+    display:flex;
+    
+}
+
+.slidebar-header{
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.content{
+    padding: 20px;
+}
+
+.title >h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.content-card{
+ background-color: rgba(0, 0, 0, 0.074);   
+ padding: 20px;
+ border-radius: 10px;
+ margin-top: 15px;
+ 
+}
+
+.statcard-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: rgba(0, 76, 255, 0.678);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.statcard-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: rgba(255, 145, 0, 0.678);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.statcard-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: rgba(0, 223, 33, 0.999);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+
+
+div > .head{
+    margin-bottom: 10px;
+}
+
+div > .status{
+    margin-top: 10px;
+}
+
+hr{
+   
+    border: 1px solid rgba(0, 0, 0, 0.152);
+}
+
+.status-cards{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+#application-table, tr,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+#application-table{
+    width: 100%;
+    overflow: scroll;
+}
+
+#sidebar {
+    transition: display 0s, opacity 0.5s linear;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .slidebar{
+        display: none;
+    }
+    .statcard-1,.statcard-2,.statcard-3{
+        width:50%;
+    }
+
+    .content-card{
+        width: 80%;
+    }
+
+    .tabele{
+        width: auto;
+        
+    }
+
+    #application-table, tr, th {
+        
+        padding: 0px;
+    }
+  }
+
+@media only screen and (min-width: 1280px) {
+    .status-cards{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .statcard-1,.statcard-2,.statcard-3{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+  }
+
+  .sub-menu-item{
+    text-decoration: none;
+    color: white;
+  }
+
+
+li a{
+    text-decoration: none;
+    color: white;
+}

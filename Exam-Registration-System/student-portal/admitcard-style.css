@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+.myclass{
+	background-color: red;
+}
+	.txtheading{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 23px;
+letter-spacing: -0.2px;
+word-spacing: 1px;
+color: #2B6EB5;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+ text-transform: uppercase;
+}
+
+.txtsubheading{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 18px;
+letter-spacing: -0.2px;
+word-spacing: 1px;
+color: #2B6EB5;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+ text-transform: uppercase;
+
+}
+
+
+.subheading {
+font-family: Verdana, Geneva, sans-serif;
+font-size: 28px;
+color: #17a2b8;
+font-weight: 500;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+ text-transform: uppercase;
+ padding-left:5px;
+
+}
+.main
+    {
+     position:relative;
+  		height:140px;
+  		width:140px;
+
+    }
+    .overlay    {
+      position:absolute;
+	  top:40px;
+	  right:60px;
+	   height:140px;
+  		width:140px;
+
+	 
+    }
+
+     .overlaysign    {
+      position:absolute;
+	  top:180px;
+	     height:140px;
+  		width:140px;
+	  
+
+
+    }
